@@ -1,0 +1,135 @@
+body {
+  background-color: darkseagreen;
+}
+/* Align intro + about me horizontally */
+.intro-about-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 20px;
+  }
+  
+  /* Top section */
+  .top-section {
+    text-align: center;
+    max-width: 300px;
+  }
+  
+  .top-img {
+    width: 100%;
+    border-radius: 20px;
+  }
+  
+  .intro-text h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2em;
+    margin: 10px 0 0;
+  }
+  
+  .name-intro {
+    font-size: 1.1em;
+  }
+  
+  .name-intro span {
+    font-weight: bold;
+    color: #604f71;
+  }
+  
+  /* About Me */
+  .about-me {
+    max-width: 400px;
+  }
+  
+  .about-me h2 {
+    font-size: 1.6em;
+    margin-bottom: 10px;
+  }
+  
+  .about-me ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+  }
+  
+  .about-me li {
+    margin: 6px 0;
+  }
+  
+  /* Favorites and Fun Facts */
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    margin: 30px 20px;
+  }
+  
+  .favorites, .fun-facts {
+    max-width: 300px;
+  }
+  
+  .favorites h2, .fun-facts h2 {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+  }
+  
+  /* Something to Share */
+  .share {
+    margin: 30px 20px;
+    padding: 20px;
+    background-color: #f7f5fa;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .share h2 {
+    font-size: 1.6em;
+    margin-bottom: 10px;
+  }
+  
+  .reflection {
+    margin-top: 20px;
+    text-align: left;
+    background-color: #e8f8e1;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 15px;
+  }
+  
+  .reflection h3 {
+    color: #604f71;
+    margin-bottom: 8px;
+    font-size: 18px;
+  }
+  
+  .reflection p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+    color: #2c3c2f;
+  }
+  
+  /* Footer */
+  .footer {
+    margin-top: 50px;
+    padding: 15px;
+    text-align: center;
+    background-color: #efefef;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .intro-about-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .flex-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  

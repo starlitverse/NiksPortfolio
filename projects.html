@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="css/projects.css" />
+  <title>Niks</title>
+</head>
+<body>
+  <header>
+    <div class="logo-title">
+      <h1 class="site-title">MY WEB PORTFOLIO</h1>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">PROJECTS</a>
+          <div class="dropdown-content">
+            <a href="projects/Blogsite/blogsite.html">Blogsite</a>
+            <a href="projects/fandom/fandom.html">Fandom</a>
+            <a href="projects/Slambook/slambook.html">Slambook</a>
+          </div>
+        </li>
+        <li><a href="quizzes.html">QUIZZES</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main-centered">
+    <div class="project-wrapper">
+      <button id="prev">&#10094; Previous</button>
+
+      <div class="project-container">
+        <div class="box box-1 active">
+          <a href="projects/Blogsite/blogsite.html">
+            <img src="images/blogsite_img.png" alt="Blog Image" class="blog-image">
+            Blogsite</a>
+        </div>
+        <div class="box box-2 active">
+          <a href="projects/fandom/fandom.html">
+            <img src="images/fandom_img.png" alt="Fandom Image" class="fandom-image">
+            Fandom</a>
+            <p>(1st year)</p>
+        </div>
+        <div class="box box-3 active">
+          <a href="projects/Slambook/slambook.html">
+            <img src="images/slambook.png" alt="Slambook Image" class="slambook-image">
+            Slambook</a>
+            <p>(1st year)</p>
+        </div>
+        <div class="box box-3 active">
+          <a href="projects/N/layout.html">
+            <img src="images/slambook.png" alt="Slambook Image" class="slambook-image">
+            asdfghjk</a>
+            <p>(3rd year)</p>
+        </div>
+        <div class="box box-5">next project 5</div>
+      </div>
+
+      <button id="next">Next &#10095;</button>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="contact-info">
+        <h3>Contact Information</h3>
+        <p><strong><ion-icon name="call"></ion-icon>:</strong> <a href="tel:+639123456789">+63 912 345 6789</a></p>
+        <p><strong><ion-icon name="mail"></ion-icon>:</strong> <a href="mailto:sc.jennicaowen.recio@cvsu.edu.ph">sc.jennicaowen.recio@cvsu.edu.ph</a></p>
+      </div>
+
+      <div class="social-links">
+        <ul>
+          <li><a href="https://github.com/starlitverse" target="_blank"><ion-icon name="logo-github"></ion-icon></a></li>
+          <li><a href="https://www.linkedin.com/in/jennica-owen-recio-092154331/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+          <li><a href="https://www.facebook.com/share/169tFcZs9Q/"><ion-icon name="logo-facebook"></ion-icon></a></li>
+          <li><a href="https://www.instagram.com/nikcxsz?igsh=MXVwMDJxd3E3Y3pqOQ=="><ion-icon name="logo-instagram"></ion-icon></a></li>
+          <li><a href="https://medium.com/@nnnnnnnnnnnnnnn"><ion-icon name="logo-medium"></ion-icon></a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script src="js/projects.js"></script>
+</body>
+</html>

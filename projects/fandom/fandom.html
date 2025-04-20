@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lakers Player Showcase</title>
+  <link rel="stylesheet" href="fandom.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Lakers Player Showcase</h1>
+    <select id="positionFilter">
+      <option value="all">All Positions</option>
+      <option value="center">Center</option>
+      <option value="power-forward">Power Forward</option>
+      <option value="shooting-guard">Shooting Guard</option>
+      <option value="small-forward">Small Forward</option>
+      <option value="point-guard">Point Guard</option>
+    </select>
+
+    <div class="player-grid">
+      <div class="column" data-position="center power-forward">
+        <img src="Anthony.jpeg" alt="Anthony Davis">
+        <div class="layer">
+          <h3>No. 3<br><strong>Anthony Davis</strong><br>Center / Power Forward</h3>
+          <div class="stats">PPG: 24.5 | RPG: 12.4 | BPG: 2.1</div>
+        </div>
+      </div>
+
+      <div class="column" data-position="shooting-guard">
+        <img src="Davon.jpeg" alt="Davon Reed">
+        <div class="layer">
+          <h3>No. 11<br><strong>Davon Reed</strong><br>Shooting Guard</h3>
+          <div class="stats">PPG: 3.8 | APG: 1.2 | FG%: 42.3</div>
+        </div>
+      </div>
+
+      <div class="column" data-position="point-guard">
+        <img src="Angelo.jpeg" alt="D'Angelo Russell">
+        <div class="layer">
+          <h3>No. 1<br><strong>D'Angelo Russell</strong><br>Point Guard</h3>
+          <div class="stats">PPG: 17.2 | APG: 6.5 | 3P%: 38.9</div>
+        </div>
+      </div>
+
+      <div class="column" data-position="shooting-guard small-forward">
+        <img src="Malik.jpeg" alt="Malik Beasley">
+        <div class="layer">
+          <h3>No. 5<br><strong>Malik Beasley</strong><br>Shooting Guard / Small Forward</h3>
+          <div class="stats">PPG: 13.4 | FG%: 45.1 | 3P%: 39.7</div>
+        </div>
+      </div>
+
+      <div class="column" data-position="power-forward">
+        <img src="Rui.jpeg" alt="Rui Hachimura">
+        <div class="layer">
+          <h3>No. 28<br><strong>Rui Hachimura</strong><br>Power Forward</h3>
+          <div class="stats">PPG: 11.7 | RPG: 5.3 | FG%: 49.8</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const filter = document.getElementById("positionFilter");
+    const players = document.querySelectorAll(".column");
+
+    filter.addEventListener("change", () => {
+      const value = filter.value;
+
+      players.forEach(player => {
+        const positions = player.dataset.position;
+
+        if (value === "all") {
+          player.style.display = "block";
+          player.classList.remove("filtered");
+        } else if (positions.includes(value)) {
+          player.style.display = "block";
+          player.classList.add("filtered");
+        } else {
+          player.style.display = "none";
+          player.classList.remove("filtered");
+        }
+      });
+    });
+  </script>
+</body>
+</html>

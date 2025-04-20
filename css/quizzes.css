@@ -1,0 +1,225 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html, body {
+  width: 100%;
+  font-family: Arial, sans-serif;
+  background-color: #fcfcfb;
+}
+
+/* Header Styling */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: #1c2d1d;
+  z-index: 1000;
+  padding-bottom: 10px;
+}
+
+.logo-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 5px;
+}
+
+.site-title {
+  font-size: 40px;
+  color: #d8ab21;
+  margin-top: 3px;
+  letter-spacing: 1px;
+  font-family: Georgia, serif;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav ul li a, .dropbtn {
+  display: inline-block;
+  color: #e8e08f;
+  padding: 10px 16px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s, color 0.3s;
+  font-family: Georgia, serif;
+}
+
+nav ul li a:hover, .dropdown:hover .dropbtn {
+  background-color: #d8ab21;
+  color: #fcfcfb;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #e8e08f;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.dropdown-content a {
+  color: #604f71;
+  padding: 12px 16px;
+  display: block;
+  text-align: left;
+  font-family: Georgia, serif;
+}
+
+.dropdown-content a:hover {
+  background-color: #d8ab21;
+  color: #fcfcfb;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+
+  nav ul li {
+    width: 100%;
+  }
+
+  .dropdown-content {
+    position: relative;
+    width: 100%;
+  }
+}
+
+/* Footer Styling */
+footer {
+  background-color: #e8e08f;
+  padding: 30px 0;
+  text-align: center;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contact-info {
+  margin-bottom: 20px;
+}
+
+.contact-info h3 {
+  font-size: 30px;
+  color: #604f71;
+}
+
+.contact-info p {
+  font-size: 16px;
+  color: #604f71;
+}
+
+.contact-info a {
+  color: #604f71;
+}
+
+.contact-info a:hover {
+  color: #a2a9aa;
+}
+
+.social-links ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-links ul li {
+  display: inline-block;
+}
+
+.social-links ul li a {
+  color: #604f71;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.social-links ul li a:hover {
+  color: #d8ab21;
+}
+
+/* ✅ Center the section */
+.center-main {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 100px;
+  padding-bottom: 60px;
+  box-sizing: border-box;
+}
+
+.quiz-section {
+  text-align: center;
+}
+
+.quiz-section h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #604f71;
+}
+
+.quiz-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.quiz-card {
+  background-color: #1c2d1d;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.quiz-card:hover {
+  transform: scale(1.03);
+}
+
+.quiz-card h3 {
+  color: #d8ab21;
+  margin-bottom: 1rem;
+}
+
+.quiz-card button {
+  background-color: white;
+  color: #1c2d1d;
+  border: 1px solid #1c2d1d;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
