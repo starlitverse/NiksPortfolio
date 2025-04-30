@@ -123,31 +123,45 @@ main {
   margin-top: 100px;
 }
 
-.quizzes-container {
+.quiz-section {
+  margin-bottom: 60px;
+  padding: 0 20px;
+}
+
+.quiz-section h1 {
+  text-align: center;
+  color: #1c2d1d;
+  margin-bottom: 25px;
+  font-size: 32px;
+  font-family: Georgia, serif;
+}
+
+.quiz-row {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
   justify-content: center;
-  max-width: 900px;
-  width: 100%;
+  gap: 25px;
 }
 
 .quiz-card {
   background-color: #fff;
-  border: 2px solid #1c2d1d;
+  padding: 10px;
   border-radius: 10px;
-  padding: 20px;
-  width: 250px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 3px 8px rgba(0,0,0,0.15);
   text-align: center;
-  transition: transform 0.3s ease, background-color 0.3s ease;
+  width: 180px;
 }
 
-.quiz-card:hover {
-  transform: translateY(-8px);
-  background-color: #e8e08f;
+.quiz-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
 }
 
+.quiz-card p {
+  margin-top: 10px;
+  font-weight: bold;
+}
 .quiz-card img {
   width: 100%;
   height: auto;
